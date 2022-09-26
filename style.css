@@ -18,20 +18,11 @@ a:hover {
     cursor: pointer;
 }
 
-.main{
-    color:black;
-    background-color: white;
-    font-size: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    max-width: 250px;
-    border-radius: 18% 82% 18% 82% / 74% 23% 77% 26% ;
-}
-
 h1{
-    color:#c35b2a;
-    background-color:  rgb(108, 200, 243, 0.5)
+    color:black;
+    background-color:  rgb(194, 121, 86, 0.6);
+    padding: 20px 10px;
+    border-radius: 18% 82% 18% 82% / 74% 23% 77% 26% ;
 }
 #page-loading-blocs-notifaction {
     position: fixed;
@@ -41,6 +32,41 @@ h1{
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
+
+.submenu{
+    color: white;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+    padding: 0px 0px 20px 0px;
+    margin-top:0px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.submenu2{
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #364577;
+
+}
+
+
+.client{
+    text-align: center;
+    margin: 40px 60px 20px 60px;
+    font-size: 16px;
+    color:#364577;
+    position: relative;
+    z-index: 2;
+    background-color:rgb(255, 255, 255, 0.5);
+}
+.client em{
+    font-weight: 600;
+}
+
 .text-center{
     font-size: 16px;
     
@@ -63,7 +89,7 @@ h1{
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px 20px;
 }
 
 .bloc-md {
@@ -112,7 +138,7 @@ h1{
     background: url("img/texture-paper.png");
     background-color: rgb(108, 200, 243);
     background-size: 280px 280px;
-    opacity: 0.65;
+    opacity: 0.5;
 }
 
 .b-parallax {
@@ -143,7 +169,7 @@ h1{
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
+.d-bloc a,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -154,6 +180,11 @@ h1{
 .d-bloc h6 a,
 .d-bloc p a {
     color: rgba(255, 255, 255, .6);
+}
+
+.icon-md{
+    color: #364577;
+    
 }
 .navbar-brand img{
     height: 40px;
@@ -254,7 +285,7 @@ h1{
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color:#575757;
+    color:#364577;
 }
 .navbar a:hover{
     color: #c35b2a;
@@ -722,8 +753,9 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #364577;
 }
+
 
 .med-width-whitespace {
     max-width: 800px;
@@ -732,7 +764,7 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #333333;
 }
 
 h4 {
@@ -784,7 +816,19 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color:#F3976C;
+}
+.call{
+    color: white;
+    font-size: 32px;
+    position: relative;
+    z-index: 3;
+    font-weight: 600;
+}
+
+.new-text{
+    color:#364577;
+    font-size: 18px;
 }
 
 .btn-atomic-tangerine {
@@ -832,7 +876,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 
