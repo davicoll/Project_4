@@ -80,31 +80,38 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" method="post" action="traitement.php" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
 						<label>
-							Nom
+							Nom:
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" class="form-control" placeholder="Ex: Jean Dupont" required />
 					</div>
 					<div class="form-group">
 						<label>
-							Adresse email
+							Adresse email:
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" class="form-control" type="email" placeholder="Ex: jean@gmail.com" required />
 					</div>
 					<div class="form-group">
 						<label>
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<select class="form-control" type="email" required id="input_504" name="input_504" placeholder="Raccontez nous!">
+							<option value="recherche_google">Recherche google</option>
+							<option value="ami">Reccommendation d'un proche</option>
+							<option value="reseaux">Sur les reaseaux sociaux</option>
+							<option value="realisation">Une des nos réalisations</option>
+							<option value="autre">Autre</option>
+						</select>
+
 					</div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+					<button class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" type="submit">
 						Envoyer
 					</button>
 				</form>
@@ -125,7 +132,7 @@
 
 
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
@@ -157,7 +164,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
 </div>
