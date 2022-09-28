@@ -2,28 +2,26 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="L'agence La Panthère à Lyon est une agence de web design qui va au dela. Un design réfléchi, strategique et des illustrations de qualité, tout ça adapté aux objectifs du client.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta name="robots" content="index, follow">
+	<meta name="google-site-verification" content="tC-EgzXPdAsrt70VyRhcQP3gqxkifGtJSJb1QAbPHsw">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery.touchSwipe.js" defer></script>
+	<script src="./js/gmaps.js"></script>
+
     <title>La Panthère agence de web design - formulaire de contact</title>
 
-    
-<!-- Analytics -->
- 
-<!-- Analytics END -->
     
 </head>
 <body>
@@ -33,9 +31,10 @@
 <!-- bloc-0 -->
 <div class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
+
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="atlanta web design logo" height="40" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo qui montre une panthère dessiné sur fond blanc"/></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -43,12 +42,7 @@
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-					</li>
-					<li>
-						<a href="page2.html">page2 &gt;</a>
+						<a href="index.html">Retour à la page principale</a>
 					</li>
 				</ul>
 			</div>
@@ -82,24 +76,25 @@
 			<div class="col-sm-6">
 				<form id="form_1" method="post" action="traitement.php" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom:
 						</label>
 						<input id="name" class="form-control" placeholder="Ex: Jean Dupont" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email:
 						</label>
 						<input id="email" class="form-control" type="email" placeholder="Ex: jean@gmail.com" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
-						<select class="form-control" type="email" required id="input_504" name="input_504" placeholder="Raccontez nous!">
+						<select class="form-control" type="email" required id="input_504" name="input_504">
+							<option disabled selected value> -- Choisissez un! -- </option>
 							<option value="recherche_google">Recherche google</option>
-							<option value="ami">Reccommendation d'un proche</option>
+							<option value="ami">Recommendation d'un proche</option>
 							<option value="reseaux">Sur les reaseaux sociaux</option>
 							<option value="realisation">Une des nos réalisations</option>
 							<option value="autre">Autre</option>
@@ -107,7 +102,7 @@
 
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
