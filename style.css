@@ -24,8 +24,24 @@ h1{
     color:black;
     background-color:  rgb(194, 121, 86, 0.6);
     padding: 20px 10px;
-    border-radius: 18% 82% 18% 82% / 74% 23% 77% 26% ;
+    border-radius: 18% 82% 18% 82% / 74% 23% 77% 26%;
+    font-size: 32px;
+    text-align: center;
 }
+.pg2{
+    font-size: 28px;
+    border-radius: 83% 17% 75% 25% / 29% 80% 20% 71%;
+    max-width: 400px;
+    margin: 20px auto;
+
+}
+.h2pg2{
+    color: #364577;
+    border-radius: 80% 20% 88% 12% / 21% 69% 31% 79%;
+    background-color: rgb(255, 255, 255, 0.3);
+    padding: 20px 5px;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -323,11 +339,6 @@ h1{
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
-}
-
-h1 {
-    font-size: 32px;
-    text-align: center;
 }
 
 .navbar {
@@ -690,12 +701,28 @@ h4,
 h5,
 h6,
 p,
-label,
 .btn,
 a {
     font-family: "fira sans";
     font-weight: 400;
     color: #575757;
+}
+label{
+    font-family: "fira sans";
+    font-weight: 400!important;
+    color: #364577;
+}
+iframe{
+    max-width: 100%;
+    text-align: center;
+}
+.footer2{
+    color: #2D3D67;
+}
+
+.acces{
+    color: #364577;
+    font-size: 16px;
 }
 
 .container {
