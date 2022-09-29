@@ -84,6 +84,12 @@ h1{
 .client em{
     font-weight: 600;
 }
+.flex-map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .text-center{
     font-size: 18px;
@@ -722,7 +728,9 @@ iframe{
 
 .acces{
     color: #364577;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
+    align-self:flex-start;
 }
 
 .container {
@@ -746,7 +754,7 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: 10px auto;
 }
 
 .h1 {
@@ -764,7 +772,11 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 h2 {
@@ -807,11 +819,6 @@ h4 {
     margin-bottom: 24px;
 }
 
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
-}
-
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
@@ -847,6 +854,8 @@ h4 {
     position: relative;
     z-index: 3;
     font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .new-text{
@@ -971,9 +980,21 @@ h4 {
         padding-left: 8px;
         padding-right: 8px;
     }
+    .contacts-container{
+        padding-left: 25px;
+        padding-right:25px;
+    }
 }
 
 @media (max-width: 767px) {
+
+    .btn-center{
+       margin: 10px 35% 30px 35%;
+    }
+ 
+    .pad{
+        padding-bottom: 10px;
+    }
     .small{
         min-width: 100%;
     }
@@ -989,8 +1010,8 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1123,10 +1144,22 @@ h4 {
     h1{
         font-size: 24px;
     }
+    .call{
+        font-size: 22px;
+        
+    }
+    .cta-hero{
+        font-size: 20px;
+    }
+    .btn-center{
+        margin: 10px 40% 30px 30%;
+     }
+
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
+
 }
